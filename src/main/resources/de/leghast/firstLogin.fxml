@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView id="imageView" fitHeight="247.0" fitWidth="489.0" layoutX="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/cyberpunk.jpg" />
+         </image>
+      </ImageView>
+      <TextField id="webaddress" fx:id="webaddress" layoutX="67.0" layoutY="293.0" promptText="WEBADRESSE" />
+      <Label layoutX="68.0" layoutY="276.0" text="Webadresse der Datenbank" />
+      <Label layoutX="223.0" layoutY="276.0" prefHeight="17.0" prefWidth="164.0" text="Nutzername für die Datenbank" />
+      <TextField id="username" layoutX="230.0" layoutY="293.0" promptText="NUTZERNAME" />
+      <PasswordField id="passwordDatabase" layoutX="394.0" layoutY="293.0" promptText="PASSWORT" />
+      <Label layoutX="395.0" layoutY="276.0" text="Passwort für die Datenbank" />
+      <PasswordField id="newPass" layoutX="231.0" layoutY="387.0" promptText="Ihr Passwort hier" />
+      <Label layoutX="166.0" layoutY="370.0" text="Das Passwort für Ihren Account in diesem Programm" textFill="RED" />
+      <Button id="button" layoutX="251.0" layoutY="419.0" mnemonicParsing="false" text="Account erstellen" />
+      <Label id="labelErr" layoutX="203.0" layoutY="247.0" text="Bitte alle Felder ausfüllen!" textFill="RED" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField id="port" layoutX="149.0" layoutY="337.0" promptText="PORT" />
+      <TextField id="databaseName" layoutX="313.0" layoutY="337.0" promptText="DATABASE NAME" />
+      <Label layoutX="169.0" layoutY="320.0" text="Port of the Database" />
+      <Label layoutX="328.0" layoutY="320.0" text="Name of the Database" />
+   </children>
+</AnchorPane>

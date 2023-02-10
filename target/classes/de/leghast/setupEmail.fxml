@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="228.0" layoutY="25.0" text="E-Mail Setup">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField id="fieldAddress" layoutX="55.0" layoutY="117.0" promptText="SMTP-ADRESSE" />
+      <Label layoutX="80.0" layoutY="101.0" text="SMTP-Webadresse *" />
+      <Button id="buttonOK" layoutX="274.0" layoutY="361.0" mnemonicParsing="false" text="Okay" />
+      <TextField id="fieldPortTLS" layoutX="401.0" layoutY="117.0" promptText="PORT" />
+      <Label layoutX="272.0" layoutY="101.0" text="SMTP-Port *" />
+      <CheckBox layoutX="104.0" layoutY="161.0" mnemonicParsing="false" text="SSL notwendig" />
+      <CheckBox layoutX="217.0" layoutY="161.0" mnemonicParsing="false" text="TLS notwendig" />
+      <CheckBox layoutX="329.0" layoutY="161.0" mnemonicParsing="false" text="Authentifizierung erforderlich" />
+      <PasswordField layoutX="226.0" layoutY="117.0" promptText="PORT" />
+      <Label layoutX="392.0" layoutY="101.0" text="TLS-Port  (nur wenn notwendig)" />
+      <TextField id="fieldMail" layoutX="55.0" layoutY="240.0" promptText="E-MAIL" />
+      <Label layoutX="90.0" layoutY="223.0" text="E-Mail-Adresse *" />
+      <PasswordField id="fieldPassword" layoutX="226.0" layoutY="240.0" promptText="PASSWORT" />
+      <Label layoutX="243.0" layoutY="223.0" text="Passwort der E-Mail *" />
+      <TextField id="fieldName" layoutX="401.0" layoutY="240.0" promptText="NAME" />
+      <Label layoutX="440.0" layoutY="223.0" text="Anzeigename" />
+      <ProgressBar id="progress" layoutX="196.0" layoutY="330.0" prefWidth="200.0" progress="0.0" visible="false" />
+      <Label id="labelSave" layoutX="261.0" layoutY="313.0" text="SPEICHERN..." visible="false" />
+      <Label id="errorField" layoutX="172.0" layoutY="276.0" text="Bitte alle Pflichtfelder ausfüllen" textFill="RED" visible="false">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
